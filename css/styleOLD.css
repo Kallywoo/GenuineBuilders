@@ -1,0 +1,626 @@
+@font-face {
+	font-family:'helvLight';
+	src: url('../fonts/HelveticaNeueLTStd-Lt.otf'),
+		 url('../fonts/HelveticaNeueLTStd-Lt.ttf') format('truetype'),
+		 url('../fonts/HelveticaNeueLTStd-Lt.woff') format('woff'),
+		 url('../fonts/HelveticaNeueLTStd-Lt.svg') format('svg');
+}
+
+@font-face {
+	font-family:'helv';
+	src: url('../fonts/HelveticaNeueLTStd-Roman.otf'),
+		 url('../fonts/HelveticaNeueLTStd-Roman.ttf') format('truetype'),
+		 url('../fonts/HelveticaNeueLTStd-Roman.woff') format('woff'),
+		 url('../fonts/HelveticaNeueLTStd-Roman.svg') format('svg')
+		 ;
+}
+
+body {
+	font-family: helvLight;
+	letter-spacing: 0.07em;
+}
+
+a,a:hover,a:active {
+	text-decoration: none;
+	color: inherit;
+}
+
+.clear {
+	clear: both;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.ltGreen {
+	color: #8cde97;
+}
+
+.dkGreen {
+	color: #52af07;
+}
+
+.white {
+	color: white;
+}
+
+.mobile {
+	display: none;
+}
+
+.mobileNav {
+	display: none;
+}
+
+.headContainer {
+	margin: 0 auto;
+    max-width: 920px; 
+}
+
+.masthead .clear {
+	height: 0.5em;
+}
+
+.masthead {
+	background: url('../img/headerBackground.jpg') repeat;
+	margin: 0;
+	font-family: helv;
+}
+
+.masthead .logo img {
+	margin-left: 1.5em;
+}
+
+.footer {
+	background: url('../img/headerBackground.jpg') repeat;
+	margin: 0;
+	font-family: helv;
+}
+
+.footer .logo img {
+	margin-left: 1.5em;
+	margin-top: 1em;
+	width: 75%;
+}
+
+.titleContact {
+	margin-top: 3.1em;
+}
+
+.footer .titleContact {
+	margin: 0em;
+}
+
+.navigation {
+	margin: 0;
+	position: relative;
+}
+
+.navigation li {
+	box-shadow: 3px 3px 3px;
+}
+
+.nav {
+	margin-right: 5em;
+	margin-top: -0.8em;
+	margin-bottom: -1em;
+}
+
+.main-content {
+	background: url('../img/brickBackground.jpg') repeat;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.main-content .subcontent {
+	background: #2a3035;
+	margin: 2em 5em;
+	border-radius: 10px;
+	padding-top: 1em;
+	box-shadow: 5px 5px 5px;
+}
+
+.main-content p {
+	color: #a0df6d;
+}
+
+.main-content h4 {
+	color: white;
+	font-weight: normal;
+	margin: 1.5em 0.5em;
+}
+
+.main-content .subcontent p {
+	text-align: left;
+	width: 92%;
+	margin: 0 auto;
+}
+
+.info {
+	width: 50%;
+	color: #a0df6d;
+	margin: 0em auto;
+}
+
+.info > li:first-child {
+	margin-left: 1.95em;
+}
+
+ul.info li {
+	list-style-image: url('../img/screwBulletSmall.png');
+	float: left;
+	margin-left: 1.5em;
+}
+
+.carousel {
+	background: #475159;
+	margin: 0em 2.15em 2em 2.15em;
+}
+
+.contact {
+	float: right;
+}
+
+#contactTable {
+	margin-right: 1em;
+	margin-left: 1em;
+	color: #a0df6d;
+	float: right;
+}
+
+#contactTable th {
+	font-size: 1.6em;
+	letter-spacing: 0.1em;
+}
+
+#contactTable img {
+	width: 2.35em;
+	/*For Chrome*/
+	max-width: none;
+}
+
+#contactTable div {
+	width: 8.5em;
+	padding: 0 0.5em;
+	font-size: 0.9em;
+}
+
+#contactTable div.contactEmail {
+	width: 15em;
+	padding: 0 0.5em;
+	color: white;
+}
+
+#contactTable .names {
+	width: 6.5em;
+}
+
+.footer #contactTable {
+	margin-left: 0;
+	margin-right: 1em;
+	margin-top: 2em;
+	float: right;
+}
+
+.footer .navList {
+	margin-top: 2em;
+	margin-left: 0;
+	margin-right: 2.5em;
+}
+
+.navList li {
+	color: #aeca97;
+	list-style-type: none;
+	line-height: 2.5em;
+}
+
+.numbers, .aboutBox p.aboutBoxGreen {
+	color: #aeca97;
+}
+
+.mobileNav {
+	background: #1f2327;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 99999;
+	display: none;
+	width: 100%;
+	box-shadow: 0 1px 5px #1c1c1c
+}
+	
+.mobileNav img {
+	padding: 0.5em;
+}
+
+#mobileMenu li {
+	list-style-type: none;
+}
+
+.mobileSocial {
+	float: right;
+	width: 30%;
+	padding: 0.5em;
+	text-align: center;
+}
+
+.mobileSocial img {
+	max-width: 70%;
+	padding: 0.7em;
+}
+
+.mobileSocial p {
+	font-size: 1.3em;
+	color: white;
+	margin-top: 0.6em;
+}
+
+.mobileContact p {
+	padding: 0;
+	color: white;
+	margin: 0 0 0 1em;
+	width: 60%;
+	font-size: 90%;
+}
+
+.aboutInfo h4, .aboutBox h4 {
+	text-align: left;
+	margin-left: 2em;
+}
+
+.aboutInfo h4 {
+	margin-top: 0;
+}
+
+.aboutBox h4 {
+	padding-top: 1em;
+}
+
+.aboutBox p:last-of-type {
+	padding-bottom: 1em;
+}
+
+.aboutImage {
+	background: #475159;
+	height: 13em;
+	width: 92%;
+	margin: 1em auto;
+}
+
+.aboutBox {
+	background: #475159;
+	width: 92%;
+	margin: 1em auto;
+}
+
+.leftHandContent {
+	float: left;
+	width: 40%;
+	margin: 0.5em;
+}
+
+.rightHandContent {
+	float: right;
+	width: 50%;
+	margin: 0.5em;
+	background: #475159;
+	border-radius: 3px;
+}
+
+.contactForm {
+	color: white;
+}
+
+.contactForm tr td {
+	text-align: right;
+	padding: 0.3em 0.5em
+}
+
+.contactForm h3 {
+	color: #8cde97;
+}
+
+p.name {
+	font-weight: bold;
+	font-size: 1.2em
+}
+
+p.number {
+	color: #8cde97;
+	font-size: 1.1em;
+}
+
+p.email {
+	color: white;
+	font-size: 1.1em;
+}
+
+.button {
+	border-radius: 4px;
+	border: 1px solid #8cde97;
+	background: #2A3035;
+	color: #8cde97;
+	padding: 0.4em 1.3em;
+}
+
+.button:hover {
+	background: gray;
+	color: black;
+}
+
+.button:active {
+	background: black;
+	color: #8cde97;
+}
+
+.leftHandContent p:first-child {
+	margin-top: 1em;
+}
+
+.leftHandContent p:last-child {
+	margin-top: 4em;
+}
+
+.galleryImage {
+	float: left;
+	background: #475159;
+	margin: 1.5em 0 0 1.5em;
+}
+
+.galleryImage img {
+	padding: 1em;
+	cursor: pointer;
+}
+
+.project {
+	background: #475159;
+	margin: 1.5em;
+	padding: 1em;
+}
+
+.project img {
+	padding: 0.5em;
+}
+
+.socialMin {
+	text-align: right;
+	padding: 1em 1.5em
+}
+
+.socialRight {
+	width: 55%;
+	float: right;
+}
+
+.socialLeft {
+	width: 40%;
+	float: left;
+}
+
+#recommendation1, #recommendation2, #recommendation3 {
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+.twitter-timeline {
+	width: 26em;
+}
+
+.testimonials {
+	margin-bottom: 4em;
+}
+
+.facebookFeed {
+	width: 90%;
+	margin: 0 2em;
+	border-radius: 5px;
+}
+
+/* .contactField label {
+	float: left;
+	width: 40%;
+}
+
+.contactField input {
+	float: right;
+	width: 55%;
+} */
+
+#mobileMenu a {
+	text-decoration: none;
+	font-size: 2em;
+	font-weight: bold;
+	color: white;
+	line-height: 2em;
+	text-shadow: 1px 1px gray;
+}
+
+@media (max-width: 767px) {
+	hr {
+	display: none;
+	}
+	
+	.nav {
+	margin-right: 0em;
+	margin-top: 0em;
+	}
+	
+	.main-content .subcontent {
+	margin: 2em 1em;
+	}
+	
+	.carousel {
+	margin: 0 1em 2em;
+	}
+	
+	.info {
+	display: none;
+	}
+	
+	.masthead .logo {
+	text-align: center;
+	}
+	
+	.masthead .logo img {
+	margin: 0;
+	width: 52%;
+	}
+	
+	.footer .logo {
+	display: none;
+	}
+	
+	.footer .titleContact {
+	display: none;
+	}
+	
+	#contactTable {
+	margin: 0 auto;
+	float: none;
+	}
+	
+	.leftHandContent {
+	width: 90%;
+	float: none;
+	}
+	
+	.rightHandContent {
+	width: 90%;
+	float: none;
+	}
+	
+	.leftHandContent p:last-child {
+	margin-top: 1em;
+	margin-bottom: 1em;
+	}
+	
+	td input, td textarea {
+	width: 100%;
+	}
+	
+	table {
+	width: 90%;
+	}
+	
+	.socialLeft {
+     width: 90%;
+     margin-bottom: 1em;
+     }
+     
+     .twitterFeed {
+     width: 90%;
+     }
+     
+     .facebookFeed {
+	 margin: 0 auto;
+     }
+     
+     .socialRight {
+     width: 90%;
+     float: left;
+     margin: 0 auto;
+     }
+     
+     .twitter-timeline {
+	 width: 90%;
+}
+}
+
+@media (max-width: 560px) {
+	td input, td textarea {
+	width: 160%;
+	}
+
+	.contactForm tr td {
+	text-align: left;
+	}
+	
+	.nonMobile {
+	display: none;
+	}
+	
+	.mobile {
+	display: block;
+	}
+	
+	body {
+	margin-top: 4.5em;
+	}
+	
+	.masthead {
+	margin-bottom: 1em;
+	}
+	
+	.masthead .logo img {
+	margin: 0.5em;
+	width: 100%;
+	}
+	
+	.masthead .logo{
+	float: left;
+	width: 60%;
+	}
+	
+	.masthead .headerContainer .titleContact {
+	display: none;
+	}
+	
+	.navigation {
+	display: none;
+	}
+	
+	.mobileNav {
+	display: block;
+	}
+	
+	#mobileMenu {
+	display: none;
+	}
+	
+	.headerContainer div.socialMin {
+	display: none;
+	}
+	
+    .carousel-control {
+    margin-top: -10px;
+    }
+    
+     .carousel-control.left {
+     left: -45px;
+     }
+     
+     .carousel-control.right {
+     right: -46px;
+     }
+     
+     .socialLeft {
+     width: 100%;
+     }
+     
+     .twitterFeed {
+     width: 95%;
+     }
+     
+     .socialRight {
+     width: 100%;
+     }
+     
+     .galleryImage {
+     float: none;
+     }
+     
+     .gallery div {
+     margin: 1em 1em;
+     }
+     
+     .subcontent div.clear:first-child {
+     display: none;
+     }
+}
+
+@media only screen and (max-device-width: 480px){
+	.carousel-control {
+	line-height: 45px;
+	}
+}
