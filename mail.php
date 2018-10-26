@@ -4,6 +4,6 @@
     $message .= "$key => $value\n";
   }
    
-  mail('mat@genuinebuilders.co.uk,john@genuinebuilders.co.uk','****JOB ENQUIRY****',$message);
+  mail('mat@genuinebuilders.co.uk,elaine@genuinebuilders.co.uk','****JOB ENQUIRY****',$message);
   header('Location: contact.html');
 ?>
