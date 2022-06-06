@@ -1,9 +1,14 @@
 <?php
-  $message = '';
-  foreach($_POST as $key => $value) {
-    $message .= "$key => $value\n";
-  }
-  $headers = "From: me@example.com";
-  mail('mat@genuinebuilders.co.uk,elaine@genuinebuilders.co.uk','****JOB ENQUIRY****',$message,$headers);
+  $name = $_POST['your_name'];
+  $email = $_POST['your_email'];
+  $number = $_POST['your_number'];
+  $message = $_POST['message'];
+
+  $to = "mat@genuinebuilders.co.uk,elaine@genuinebuilders.co.uk";
+  $subject = "****JOB ENQUIRY****";
+  $body = "Name: $name \nEmail: $email \nNumber: $number \n\n$message";
+  $headers = "From: ". $name . " <" . $mail . ">\r\n";
+  
+  mail($to,$subject,$body,$headers);
   header('Location: contact.html');
 ?>
